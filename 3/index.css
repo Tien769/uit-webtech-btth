@@ -1,0 +1,38 @@
+body {
+	font-size: 16px;
+	padding: 5em 20%;
+	line-height: 1.5em;
+}
+
+h1 {
+	text-align: center;
+	color: rgb(0, 180, 0);
+}
+
+#Container {
+	margin-top: 3em;
+}
+
+p > .subject {
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: underline solid 1.5px;
+}
+
+p > .highlight {
+	font-style: normal;
+	color: red;
+}
+
+.codeBlock {
+	background-color: rgb(197, 197, 197);
+	padding: 1em 5em 0px 5em;
+	line-height: 2em;
+	font-size: 0.85rem;
+	color: blue;
+	overflow-x: auto;
+}
+
+p {
+	font-style: italic;
+}
