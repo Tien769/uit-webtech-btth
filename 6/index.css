@@ -1,0 +1,22 @@
+body {
+	font-size: 16px;
+	margin: 0px;
+	background-image: url('assets/background.gif');
+	background-size: 100vw 100vh;
+}
+
+#Container {
+	display: flex;
+	justify-content: center;
+	padding-top: 5em;
+}
+
+#Content {
+	color: white;
+	font-size: 0.85rem;
+}
+
+.highlight {
+	color: red;
+	text-decoration: underline;
+}
