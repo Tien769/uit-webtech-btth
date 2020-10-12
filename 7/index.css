@@ -1,0 +1,62 @@
+body {
+	margin: 0px;
+}
+
+#Banner {
+	background-image: url('assets/nguyen-tac-trong-thiet-ke-do-hoa.jpg');
+	background-repeat: repeat-x;
+}
+
+h1 {
+	text-align: center;
+	font-size: 3rem;
+	color: #39e600;
+}
+
+#Table {
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+table {
+	padding: 2px;
+	border: 5px solid #39e600;
+	width: 45em;
+}
+
+th,
+th,
+td {
+	border: 2px solid #39e600;
+	text-align: center;
+}
+
+th,
+td {
+	padding: 0.25em;
+}
+
+.tb-head {
+	background-color: #39e600;
+	color: white;
+}
+.tb-d > td:nth-child(2) {
+	text-align: left;
+}
+
+.tb-d:nth-child(even) {
+	background-color: #b3ffff;
+}
+
+.tb-d:nth-last-child(1) {
+	background-color: orange !important;
+}
+
+#SpecialImage {
+	position: absolute;
+	top: 8em;
+	right: 59em;
+	background-color: transparent;
+	z-index: 99;
+}
