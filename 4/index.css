@@ -20,22 +20,23 @@ p {
 	margin-bottom: 3em;
 }
 
-#Story .stylishParagraph::first-letter {
+#Story .paragraph::first-letter {
 	font-size: 2rem;
 	color: green;
+	font-style: italic;
 }
 
-.specialBLock {
+.commentBlock {
 	margin-bottom: 3.5em;
 }
 
-#Comment .specialBLock > img {
+#Comment .commentBlock > img {
 	float: right;
 	margin-left: 1em;
 	height: 5em;
 }
 
-#Comment .specialBLock > p {
+#Comment .commentBlock > p {
 	font-size: 1.1rem;
 	padding-top: 0.25em;
 }
