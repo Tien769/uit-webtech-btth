@@ -3,8 +3,18 @@ body {
 	font-size: 16px;
 }
 
+h2 {
+	font-size: 2.25rem;
+	color: white;
+	text-align: right;
+}
+
 p {
 	margin: 1.25em 0px;
+}
+
+hr {
+	color: orange;
 }
 
 #Title {
@@ -26,6 +36,17 @@ p {
 	font-style: italic;
 }
 
+#Story span {
+	background-color: orangered;
+	font-weight: bold;
+	text-decoration: 2px underline solid;
+	font-style: italic;
+}
+
+#SectionHeader {
+	background-color: green;
+}
+
 .commentBlock {
 	margin-bottom: 3.5em;
 }
@@ -39,4 +60,14 @@ p {
 #Comment .commentBlock > p {
 	font-size: 1.1rem;
 	padding-top: 0.25em;
+}
+
+#ChiCoMotNguoiThoi {
+	float: right;
+	margin-left: 1em;
+}
+
+#BayCuu {
+	float: left;
+	margin-right: 1em;
 }
