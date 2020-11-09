@@ -1,0 +1,106 @@
+body {
+	font-size: 16px;
+	height: 100vh;
+	background-color: #990000;
+	display: flex;
+	justify-content: center;
+	padding-top: 4em;
+	overflow: hidden;
+}
+
+#Content {
+	z-index: 10;
+	height: 40em;
+	width: 60em;
+	border: 1px solid white;
+	position: relative;
+}
+
+#BackBlock {
+	width: 100%;
+	padding-top: 8em;
+	padding-bottom: 2em;
+	background-color: #ffccff;
+}
+
+#BackBlock > span {
+	color: #e60000;
+	margin-left: 4em;
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+#ForeBlock {
+	position: absolute;
+	top: 0px;
+	height: 4em;
+	width: 70%;
+	background: #e60000;
+	padding-top: 2em;
+	padding-right: 1em;
+	text-align: end;
+}
+
+#ForeBlock > span {
+	color: white;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+#Content > img {
+	position: absolute;
+	top: 1em;
+	right: 1em;
+	width: 25%;
+}
+
+.listContent {
+	list-style-type: '◻  ';
+	color: #e60000;
+	font-weight: bold;
+}
+
+.listContent > li {
+	margin-top: 2em;
+}
+
+.listContent ul {
+	color: #ffccff;
+	font-weight: 400;
+	list-style-type: disc;
+	padding-top: 2em;
+}
+
+#TextBlock {
+	float: left;
+	width: 50%;
+}
+
+#TextBlock:nth-of-type(4) ul {
+	list-style-type: decimal;
+}
+
+#TextBlock > ul {
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+img {
+	position: absolute;
+	z-index: 0;
+}
+
+#Kim {
+	left: 10em;
+	top: 8em;
+}
+
+#Rose {
+	left: 16em;
+	bottom: 13em;
+}
+
+#FadeRose {
+	right: 0px;
+	bottom: 0px;
+}
