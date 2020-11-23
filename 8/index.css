@@ -4,7 +4,7 @@ body {
 	background-color: #990000;
 	display: flex;
 	justify-content: center;
-	padding-top: 4em;
+	padding-top: 8em;
 	overflow: hidden;
 }
 
@@ -54,21 +54,27 @@ body {
 	width: 25%;
 }
 
+span.bold {
+	font-weight: 600;
+	font-style: italic;
+}
+
 .listContent {
-	list-style-type: '◻  ';
-	color: #e60000;
+	list-style-image: url('./assets/squarered.png');
+	color: #ff2525;
 	font-weight: bold;
 }
 
 .listContent > li {
-	margin-top: 2em;
+	margin-top: 1.5em;
 }
 
 .listContent ul {
 	color: #ffccff;
 	font-weight: 400;
 	list-style-type: disc;
-	padding-top: 2em;
+	list-style-image: none;
+	padding-top: 1.5em;
 }
 
 #TextBlock {
@@ -103,4 +109,5 @@ img {
 #FadeRose {
 	right: 0px;
 	bottom: 0px;
+	width: 70em;
 }
