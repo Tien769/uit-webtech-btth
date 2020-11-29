@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Phiếu đăng ký khuyến mãi</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <h1>Phiếu đăng ký tham gia chương trình khuyến mãi</h1>
+    <form id="Container" action="#" method="POST">
+      <div class="row">
+        <div class="col label">Họ Tên:</div>
+        <div id="Name" class="col input">
+          <input id="FName" name="name" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col label">Địa Chỉ:</div>
+        <div id="Address" class="col input">
+          <input id="FAddress" name="address" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col label">Điện thoại:</div>
+        <div id="Phone" class="col input">
+          <input id="FPhone" name="phone" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col label">Giới tính:</div>
+        <div id="Gender" class="col input">
+          <input id="male" type="radio" name="gender" value="male" checked />
+          <label for="male">Nam</label>
+          <input id="female" type="radio" name="gender" value="female" />
+          <label for="female">Nữ</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col label">Nghề nghiệp:</div>
+        <div id="Professional" class="col input">
+          <select id="FProfessional" name="professional">
+            <option value="giaovien" selected>Giáo Viên</option>
+            <option value="hocsinh">Học Sinh</option>
+            <option value="yta">Y Tá</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col label">Chọn sản phẩm tham gia:</div>
+        <div id="Product" class="col input">
+          <select id="FProducts" name="products" size="4" multiple>
+            <option>Kem đánh răng</option>
+            <option>Bột giặt</option>
+            <option>Dầu gội đầu</option>
+            <option>Sữa tắm</option>
+            <option>Khác</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col label">Số người dự đoán tham gia:</div>
+        <div id="Prediction" class="col input">
+          <input id="FPrediction" name="prediction" />
+        </div>
+      </div>
+      <div class="row">
+        <input id="FormSubmit" type="submit" value="Đồng ý" />
+      </div>
+      <div id="MSG" class="row"></div>
+    </form>
+    <script src="./index.js"></script>
+  </body>
+</html>
