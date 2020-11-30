@@ -1,7 +1,3 @@
-document.getElementById('FormSubmit').addEventListener('click', () => {
-  document.getElementById('MSG').style.display = 'block';
-});
-
 document.getElementById('Container').addEventListener('submit', e => {
   e.preventDefault();
   console.clear();

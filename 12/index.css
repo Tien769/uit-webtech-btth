@@ -56,10 +56,12 @@ h1 {
 }
 
 input,
-select {
+select,
+textarea {
   border-radius: 1em;
   border: 1px dotted #0835f9;
   box-shadow: 0px 0px;
+  background-color: #9acefd;
 }
 
 label {
@@ -76,9 +78,10 @@ select {
   width: 80%;
 }
 
-#Address > input {
+#Address > textarea {
   height: 5em;
   width: 90%;
+  resize: both;
 }
 
 #Phone > input {
@@ -112,11 +115,6 @@ select {
   font-style: italic;
 }
 
-input,
-select {
-  background-color: #9acefd;
-}
-
 select option:checked {
   background-color: grey !important;
 }
@@ -127,7 +125,12 @@ input[type='submit'] {
   color: white;
   font-weight: 600;
   background: rgb(0, 51, 248);
-  background: linear-gradient(180deg, rgba(0, 51, 248, 1) 0%, rgba(0, 129, 215, 1) 68%, rgba(76, 160, 162, 1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 51, 248, 1) 0%,
+    rgba(0, 129, 215, 1) 68%,
+    rgba(76, 160, 162, 1) 100%
+  );
   border: none;
   border-radius: 0.5em;
   box-shadow: 0px 1px 2px rgb(80, 80, 80);
@@ -137,6 +140,7 @@ input:checked {
   background-color: grey;
 }
 
-input {
+input,
+textarea {
   padding: 0.5em;
 }

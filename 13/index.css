@@ -1,0 +1,168 @@
+body {
+  font-size: 16px;
+  color: #0032f9;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0.5em 25%;
+}
+
+.row {
+  display: flex;
+  flex: 1 100%;
+  justify-content: center;
+  border-top: 0.5px solid #0032f9;
+  border-right: 0.5px solid #0032f9;
+  background-color: #fffece;
+}
+
+.row:nth-last-child(1) {
+  border-bottom: 0.5px solid #0032f9;
+  align-items: center;
+}
+
+.row.no-col {
+  border-left: 0.5px solid #0032f9;
+}
+
+.col {
+  display: flex;
+  padding: 0.5em;
+  text-align: start;
+  border-left: 0.5px solid #0032f9;
+  align-items: center;
+}
+
+.col-label {
+  flex: 1 35%;
+}
+
+.col-field {
+  flex: 2 65%;
+  position: relative;
+}
+
+@media all and (max-width: 600px) {
+  .row {
+    flex-wrap: wrap;
+  }
+  .col-label {
+    flex: 12 100%;
+  }
+
+  .col-field {
+    flex: 12 100%;
+  }
+}
+
+input,
+textarea,
+select {
+  border: 0.5px solid #666666;
+}
+
+#Name {
+  width: 70%;
+}
+
+#Address {
+  width: 90%;
+  height: 8em;
+}
+
+#Phone {
+  width: 45%;
+}
+
+#Nationality {
+  appearance: none;
+  width: 17px;
+  height: 17px;
+  background-color: #d9d9d9;
+  border-radius: 0.25em;
+  border: 0.25px solid #666666;
+  cursor: pointer;
+}
+
+#Nationality:checked::after {
+  content: '✔️';
+  text-align: center;
+  padding: 1px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+#Tour {
+  background-color: white;
+  width: 65%;
+}
+
+#Vehicle {
+  height: 3em;
+}
+
+#Vehicle > input {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background-color: #d9d9d9;
+  border-radius: 100%;
+  border: 0.25px solid #666666;
+  cursor: pointer;
+}
+
+#Vehicle > input:checked::after {
+  position: relative;
+  left: 16%;
+  bottom: 19%;
+  content: '●';
+  color: #666666;
+  font-size: 10px;
+}
+
+#Vehicle > label {
+  padding-top: 0.5em;
+  padding-left: 0.25em;
+  margin-right: 1em;
+}
+
+fieldset {
+  width: 60%;
+  height: 3em;
+  margin: 0.5em 0px;
+  padding: 1em;
+}
+
+fieldset > input {
+  display: inline-block;
+  margin-right: 1.5em;
+  height: 1.5em;
+  width: 30%;
+}
+
+fieldset > label {
+  padding-right: 0.25em;
+}
+
+#Note {
+  width: 90%;
+  height: 8em;
+}
+
+#Submit {
+  height: 2em;
+  width: 6em;
+  margin: 1em;
+}
+
+#Message {
+  height: 3em;
+  color: red;
+  font-weight: 600;
+}

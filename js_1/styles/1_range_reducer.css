@@ -1,0 +1,74 @@
+h1 {
+  margin: 0px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.container {
+  position: relative;
+}
+
+#Title {
+  background-color: orange;
+}
+
+.highlight {
+  color: brown;
+  font-weight: 600;
+}
+
+.container {
+  padding: 0px 30%;
+}
+
+.row {
+  background-color: bisque;
+  padding: 0em 0.15em 0.5em;
+}
+
+.row.center {
+  justify-content: center;
+}
+
+.col {
+  display: flex;
+  justify-content: left;
+}
+
+.col-label {
+  flex: 1 25%;
+  align-items: center;
+}
+
+.col-content {
+  flex: 3 75%;
+}
+
+.col-content > input {
+  width: 40%;
+}
+
+.col-content > input {
+  border: 1px solid black;
+  background: pink;
+}
+
+form {
+  background-color: white;
+  width: 100%;
+  padding: 0.25em;
+}
+
+form > input {
+  display: inline-block;
+  height: 2em;
+  width: 6em;
+  margin-right: 1em;
+  border: 1px solid black;
+}
+
+#Submit {
+  background-color: orange;
+  padding: 0.5em 1em;
+  margin-top: 1em;
+}

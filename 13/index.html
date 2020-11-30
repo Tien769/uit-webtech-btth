@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ĐĂNG KÝ DU LỊCH</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <h1>ĐĂNG KÝ DU LỊCH</h1>
+    <form id="Container" class="container">
+      <div class="row">
+        <div class="col col-label">
+          <label for="Name">Họ tên</label>
+        </div>
+        <div class="col col-field">
+          <input id="Name" name="name" type="text" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-label">
+          <label for="Address">Địa chỉ</label>
+        </div>
+        <div class="col col-field">
+          <textarea form="Container" id="Address" name="address"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-label">
+          <label for="Phone"> Điện thoại </label>
+        </div>
+        <div class="col col-field">
+          <input id="Phone" type="text" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-label">
+          <label for="Nationality"> Khách Việt Nam</label>
+        </div>
+        <div class="col col-field">
+          <input id="Nationality" type="checkbox" name="nationality" value="true" checked />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-label">
+          <label for="Tour">Chọn tour</label>
+        </div>
+        <div class="col col-field">
+          <select id="Tour" name="tour" form="Container">
+            <option value="0">Miền Bắc</option>
+            <option value="1">Hà Nội - Hạ Long - Sapa</option>
+            <option value="2">Hà Nội - Chùa Hương - Ninh Bình</option>
+            <option value="3">Hà Nội - Cát Bà - Tuần Châu</option>
+            <option value="4">Miền Trung</option>
+            <option value="5">Huế - Bạch Mã - Đà Nẵng</option>
+            <option value="6">Nha Trang - Đà Lạt</option>
+            <option value="7">Buôn Mê Thuột - Gia Lai - Kontum</option>
+            <option value="8">Miền Nam</option>
+            <option value="9">TpHCM - Cần Thơ - Cà Mau</option>
+            <option value="10">Phú Quốc - Côn Đảo</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-label">
+          <label for="Vehicle">Phương tiện</label>
+        </div>
+        <div class="col col-field" id="Vehicle">
+          <input id="Plane" name="vehicle" type="radio" value="plane" checked />
+          <label for="Plane">Máy bay</label>
+          <input id="Bus" name="vehicle" type="radio" value="bus" />
+          <label for="Bus">Xe du lịch</label>
+        </div>
+      </div>
+      <div class="row no-col">
+        <fieldset>
+          <legend>Số lượng đoàn khách</legend>
+          <label for="Adults">Người lớn</label>
+          <input id="Adults" type="text" />
+          <label for="Children">Trẻ em</label>
+          <input id="Children" type="text" />
+        </fieldset>
+      </div>
+      <div class="row">
+        <div class="col col-label">Ghi chú thêm</div>
+        <div class="col col-field">
+          <textarea id="Note" form="Container" name="note"></textarea>
+        </div>
+      </div>
+      <div class="row no-col"><input id="Submit" type="submit" value="Đồng ý" /></div>
+      <div id="Message" class="row no-col">Bạn đã đăng ký thành công!!!</div>
+    </form>
+    <script src="./index.js"></script>
+  </body>
+</html>
