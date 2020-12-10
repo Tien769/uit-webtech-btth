@@ -2,18 +2,64 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Mục lục</title>
+    <title>Tính toán trên dãy số</title>
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <div>
-      <a href="./1_range_reducer.html">Tính toán trên dãy số</a>
+    <div class="container">
+      <div id="Title" class="row highlight center">
+        <h1>TÍNH TOÁN TRÊN DÃY SỐ</h1>
+      </div>
+      <div class="row">
+        <div class="col col-label">
+          <label for="Form">Giới hạn của dãy số:</label>
+        </div>
+        <div class="col col-content">
+          <form id="Form">
+            <label for="Start">Số bắt đầu: </label>
+            <input id="Start" name="start" type="number" />
+            <label for="End">Số kết thúc: </label>
+            <input id="End" name="end" type="number" />
+          </form>
+        </div>
+      </div>
+      <div class="row"><span class="highlight">Kết quả:</span></div>
+      <div class="row">
+        <div class="col col-label">
+          <label for="Sum">Tổng các số:</label>
+        </div>
+        <div class="col col-content">
+          <input type="text" id="Sum" readonly />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-label">
+          <label for="Mult">Tích các số:</label>
+        </div>
+        <div class="col col-content">
+          <input type="text" id="Mult" readonly />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-label">
+          <label for="SumEven">Tổng các số chẵn:</label>
+        </div>
+        <div class="col col-content">
+          <input type="text" id="SumEven" readonly />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-label">
+          <label for="SumOdd">Tổng các số lẻ:</label>
+        </div>
+        <div class="col col-content">
+          <input type="text" id="SumOdd" readonly />
+        </div>
+      </div>
+      <div class="row center">
+        <input id="Submit" form="Form" type="submit" value="Tính toán" />
+      </div>
     </div>
-    <div>
-      <a href="./2.html">1</a>
-    </div>
-    <div>
-      <a href="./3.html">1</a>
-    </div>
+    <script src="./index.js" 1010></script>
   </body>
 </html>

@@ -1,3 +1,21 @@
+document.getElementById('Start').addEventListener('keydown', e => {
+  const regex = /^[a-zA-Z\/\*\,\.\<\>\(\)\&\^\%\$\#\@\!\`\~\*\=]$/;
+  if (e.key.length > 1) return true;
+  if (regex.test(e.key)) {
+    e.preventDefault();
+    return false;
+  }
+});
+
+document.getElementById('End').addEventListener('keydown', e => {
+  const regex = /^[a-zA-Z\/\*\,\.\<\>\(\)\&\^\%\$\#\@\!\`\~\*\=]$/;
+  if (e.key.length > 1) return true;
+  if (regex.test(e.key)) {
+    e.preventDefault();
+    return false;
+  }
+});
+
 document.getElementById('Form').addEventListener('submit', e => {
   e.preventDefault();
   const formValues = {
@@ -17,16 +35,21 @@ document.getElementById('Form').addEventListener('submit', e => {
       .filter(num => !isEven(num))
       .reduce((sum, num) => sum + num, 0);
   } else {
+    alert('INVALID INPUT!!!');
     console.error('INVALID INPUT!!!');
   }
 });
 
 const parseArray = range => {
   let array = [];
-  for (let i = parseInt(range.start); i <= parseInt(range.end); i++) {
+  for (
+    let i = parseInt(range.start > range.end ? range.end : range.start);
+    i <= parseInt(range.end < range.start ? range.start : range.end);
+    i++
+  ) {
     array.push(i);
   }
-  return array;
+  return array.sort();
 };
 
 const isEven = num => {
@@ -37,7 +60,5 @@ const isEven = num => {
 const validate = formValues => {
   const start = parseInt(formValues.start);
   const end = parseInt(formValues.end);
-  if (start > end) return false;
-  if (start < 0 || end < 0) return false;
   return true;
 };
